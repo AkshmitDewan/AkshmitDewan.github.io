@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    background-size: cover;
+    height: 2000px;
+    overflow-x: hidden;
+    background-color: #212121;
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.homepage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background: url('akshmitimage.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body header{
+    padding: 50px;
+}
+
+body header nav{
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+}
+
+body header nav .logo{
+    border: 2px solid #fff;
+    padding: 10px 25PX;
+    color: #fff;
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+body header nav .logo:hover{
+    background-color: #fff;
+    color: #212121;
+    cursor: pointer;
+}
+
+body header nav .navbar{
+    display: flex;
+    z-index: 1;
+}
+
+body header nav .navbar a{
+    color: #fff;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 1.2em;
+    opacity: 1;
+}
+
+body header nav .navbar a:hover{
+    color: aqua;
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+body header nav .navbar .child{
+    margin-left: 50px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    opacity: 0.5;
+}
+
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content h2{
+    font-size: 5em;
+    text-align: center;
+    color: #fff;
+}
+
+.content h2 span{
+    color: aqua;
+}
+
+.content p{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.videopage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.videopage video{
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.noverlay{
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    opacity: 0.3;
+}
+
+.videopage h2{
+    position: relative;
+    top: 1100px;
+    left: 40%;
+    z-index: 1;
+    font-size: 3em;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.para{
+    position: relative;
+    top: 1100px;
+    width: 500px;
+    height: 50px;
+    left: 30%;
+    text-align: center;
+    z-index: 1;
+    font-size: 1em;
+    color: #fff;
+}
+
+
+
+
+.projects{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 1000px;
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #0c002b;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.container .card::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container .card .content{
+    padding: 30px;
+    text-align: justify;
+}
+
+.container .card .cardcontent h2{
+    position: absolute;
+    right: 30px;
+    font-size: 4em;
+    font-weight: 800;
+    color: #1779ff;;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.9s;
+}
+
+.container .card:hover .cardcontent h2{
+    opacity: 1;
+    color: #fff;
+    font-size: 3em;
+    transform: translateY(-70px);
+}
+
+.container .card .cardcontent h3{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: consolas;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.container .card .cardcontent p{
+    font-size: 1em;
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-weight: 300;
+}
+
+.container .card:hover .cardcontent h3,
+.container .card:hover .cardcontent p{
+    opacity: 1;
+}
+
+.container .card .cardcontent a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #fff;
+    color: #0c002b;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container .card span{
+    transition: 0.5s;
+}
+
+.container .card span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,transparent,#1779ff);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.container .card span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent,#1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.container .card span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to bottom,transparent,#1779ff);
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.container .card span:nth-child(4){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top,transparent,#1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.vh2{
+    position: relative;
+    left: 40%;
+    z-index: 1;
+    font-size: 3em;
+    color: #fff;
+}
