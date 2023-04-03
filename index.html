@@ -19,7 +19,7 @@
                         <a href="#home">Home</a>
                     </div>
                     <div class="child about">
-                        <a href="#about">About</a>
+                        <a href="#videopage">About</a>
                     </div>
                     <div class="child">
                         <a href="#projects">Projects</a>
@@ -37,6 +37,20 @@
     </section>
     <section id="videopage" class="videopage">
         <video src="4.mp4" class="video" id="video" muted autoplay loop></video>
+        <ul class="navigation">
+            <li onclick="videoURL('4.mp4')">
+                <img src="fourthone.png" alt="First Image">
+            </li>
+            <li onclick="videoURL('3.mp4')">
+                <img src="kuchone.png" alt="Second Image">
+            </li>
+            <li onclick="videoURL('2.mp4')">
+                <img src="thirdone.png" alt="Third Image">
+            </li>
+            <li onclick="videoURL('1.mp4')">
+                <img src="secondone.png" alt="Fourth Image">
+            </li>
+        </ul>
         <div class="headingabout">
         <h2>About Me</h2>
         <p class="para">
@@ -48,6 +62,7 @@
     <section class="projects" id="projects">
         <br><br><br><br><br>
         <h2 class="vh2">My Projects</h2>
+        <br><br><br>
         <div class="container">
             <div class="card">
                 <span></span>
@@ -57,6 +72,7 @@
                 <div class="cardcontent">
                     <h2>01</h2>
                     <h3>Selenium Web Automation</h3>
+                    <br>
                     <p>Automating (Web Automation) the redundant work that has to be done in Vehicle Dealerships of Form Filling in Different Portals.</p>
                     <!-- <a href="#">Read More</a> -->
                 </div>
@@ -69,6 +85,7 @@
                 <div class="cardcontent">
                     <h2>02</h2>
                     <h3>Hospital Management System with AI ChatBot</h3>
+                    <br>
                     <p>Created a Management System for Hospitals and Users, to manage firstly their resources, employees etc. and for users to check their medical condition</p>
                     <!-- <a href="#">Read More</a> -->
                 </div>
@@ -81,11 +98,23 @@
                 <div class="cardcontent">
                     <h2>03</h2>
                     <h3>Income Tax Comparison Calculator</h3>
+                    <br>
                     <p>According to the Budget of year 2019 to compare the Income tax according to different rules was implemented using Python</p>
                     <!-- <a href="#">Read More</a> -->
                 </div>
             </div>
         </div>
     </section>
+    <section class="contact" id="contact">
+        <h2 class="vh2">Contact me</h2>
+        <br><br>
+        <a href="https://linktr.ee/akshmit" target="_blank">
+        <img src="akshmit (1).png" alt="">
+        </a>
+    </section>
+    <footer>
+        <p>&copy Akshmit Dewan 2023. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
